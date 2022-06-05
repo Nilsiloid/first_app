@@ -1,4 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,16 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          // ignore: avoid_unnecessary_containers
-          child: Container(
-            // ignore: prefer_const_constructors
-            child: Text("Welcome!"),
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(home: Home());
   }
 }
